@@ -89,8 +89,8 @@ func main() {
 	// time.Sleep(5 * time.Second)
 	// Create folder for every file
 
-	// createDirectory(foldername)
-	// time.Sleep(5 * time.Second)
+	go createDirectory(foldername)
+	time.Sleep(2 * time.Second)
 
 	defer moveToDirectory(allFiles)
 
