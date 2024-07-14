@@ -13,7 +13,6 @@ fn numIslands(grid:Vec<Vec<char>>) ->i32 {
     let n = g.len();
     let m = g[0].len();
     let mut count = 0;
-    println!("{} {} ",n,m);
     for i in 0..n{
         for j in 0..m{
             if g[i][j] == '1'{

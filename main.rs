@@ -18,6 +18,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         if trans_files.ends_with(".rs") {
                             let folder_str = trans_files.replace(".rs", "");
                             let folder_name = format!("./{}/", folder_str);
+                            println!("folder_name {:?}",folder_name);
                             fs::create_dir(&folder_name)?;
 
                             let read_file_path = format!("./{}", trans_files);
